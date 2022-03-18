@@ -5,14 +5,12 @@
 from math import *
 #import sys
 import numpy as np
-#from numpy import random as nrnd
-#from numpy import linalg as nlg
+
 from scipy import stats as scist
 from scipy import special as scisp
 from scipy import integrate as integrate
 
 import matplotlib.pyplot as plt
-#from pylab import cm
 
 clrs = ['C1', 'C0', 'C3'] #(ext-Oct, Tensor-HRR, Random-quad)
 alphas = [1.0, 0.6, 0.6]
