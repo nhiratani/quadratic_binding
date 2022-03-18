@@ -5,8 +5,6 @@
 from math import *
 #import sys
 import numpy as np
-#from numpy import random as nrnd
-#from numpy import linalg as nlg
 from scipy import stats as scist
 
 import matplotlib.pyplot as plt
