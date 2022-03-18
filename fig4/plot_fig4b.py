@@ -5,8 +5,6 @@
 from math import *
 #import sys
 import numpy as np
-#from numpy import random as nrnd
-#from numpy import linalg as nlg
 from scipy import stats as scist
 
 import matplotlib.pyplot as plt
@@ -14,9 +12,8 @@ import matplotlib.pyplot as plt
 
 clrs = ['C7', 'C4', 'C1']
 
-# K = 0 corresponds to Holographic
 N = 128
-Ks = [1,2,4,8,16,32,64]#[0, 2, 4, 8]
+Ks = [1,2,4,8,16,32,64]
 Tmax = 10000
 
 Klen = len(Ks)
@@ -33,7 +30,6 @@ K_theors = np.arange(1, 8, 0.01)
 err_theors = []
 for K_theor in K_theors:
     err_theors.append( 2.0/(2.0 + K_theor) )
-#err_theors = [2.0/(1.0+2.0), 2.0/(2.0 + 2.0), 2.0/(2.0 + 4.0), 2.0/(2.0 + 8.0)]
 plt.plot(K_theors, err_theors, '-', color='k')
 plt.plot(Ks[:4], errs[:4], 'o', color='k', ms=10)
 plt.plot(Ks[3:], errs[3:], 'o--', color='k', ms=10)
