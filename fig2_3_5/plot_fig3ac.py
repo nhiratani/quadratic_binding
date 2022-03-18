@@ -40,7 +40,6 @@ Pqs = np.zeros((qmax,N,N))
 for q in range(qmax):
     Pqs[q,:,:] = np.dot(np.transpose(u0), np.dot(P[q,:,:], A))
 Pqmax = np.amax(Pqs)
-#print(P[0,0,:10]-Q[0,0,:10])
 
 Pmax = np.amax(P)
 for q in range(qmax):
