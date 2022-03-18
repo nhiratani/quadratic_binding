@@ -5,8 +5,6 @@
 from math import *
 #import sys
 import numpy as np
-#from numpy import random as nrnd
-#from numpy import linalg as nlg
 from scipy import stats as scist
 
 import matplotlib.pyplot as plt
@@ -16,7 +14,7 @@ clrs = ['C7', 'C6', 'C4', 'C1']
 
 # K = 0 corresponds to Holographic
 Ns = [8,16,32,64,128,256]
-Ks = [0,1,2,4,8]#[0, 2, 4, 8]
+Ks = [0,1,2,4,8]
 Tmax = 10000
 
 Klen = len(Ks); Nlen = len(Ns)
@@ -37,12 +35,12 @@ for Kidx in range(Klen):
     if K == 0:
         xs = range(2,350)
         Nones = np.ones( (len(xs)) )
-        ys = np.divide(xs + 2*Nones, 2.0*(xs + Nones))
-        plt.plot(xs, ys,  ls='-', color='C0')
-        plt.plot(Ns, errs[Kidx], 'o', color='C0', ms=10)
+        ys = np.divide(xs + 2.0*Nones, 2.0*(xs + Nones))
+        plt.plot(xs, ys,  ls='-', color='C0') #theory
+        plt.plot(Ns, errs[Kidx], 'o', color='C0', ms=10) #empirical
     else:
-        plt.axhline(2.0/(K + 2.0), color=clrs[Kidx-1])
-        plt.plot(Ns, errs[Kidx], 'o', color=clrs[Kidx-1], ms=10)
+        plt.axhline(2.0/(K + 2.0), color=clrs[Kidx-1]) #theory
+        plt.plot(Ns, errs[Kidx], 'o', color=clrs[Kidx-1], ms=10) #empirical
 
 plt.semilogx()
 plt.xlim(6,310)
