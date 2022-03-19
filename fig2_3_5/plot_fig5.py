@@ -4,7 +4,6 @@
 #
 
 from math import *
-#import sys
 import numpy as np
 from numpy import linalg as nlg
 from scipy import stats as scist
@@ -20,7 +19,7 @@ for q in range(climit):
 N = 48
 Tpmax = 100
 K = 8
-sigrs = [0.3, 0.5, 1.0, 2.0, 3.0]#[0.3, 0.55, 1.0, 1.73, 3.0]
+sigrs = [0.3, 0.5, 1.0, 2.0, 3.0]
 ikmax = 10
 
 slen = len(sigrs)
