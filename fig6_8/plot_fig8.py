@@ -43,7 +43,7 @@ for didx in range(dlen):
         #random-quadratic
         errs_theory[2, lidx, didx] = L*(N*N + Nc + 1)/float(N*Nc) + (Nc + 3*N + 1)/float(N*Nc)
 
-loidxs = [3, 10]
+loidxs = [3, 10] # the number of bound pairs
 for lo in range(2):
     svfg = plt.figure()
     loidx = loidxs[lo]
