@@ -4,7 +4,6 @@
 # and random binding
 # under Nc >= N and L >= 1
 #
-#
 ### For parallel processing
 import os
 os.environ["MKL_NUM_THREADS"] = '4'
