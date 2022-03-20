@@ -50,9 +50,6 @@ for didx in range(dlen):
         #Tensor-HRR
         errs_theory[1, lidx, didx] = 1/float(N) + L*N*N/float(N*Nc)
 
-        #random-quadratic
-        #errs_theory[2, lidx, didx] = L*(N*N + Nc + 1)/float(N*Nc) + (Nc + 3*N + 1)/float(N*Nc)
-
 svfg = plt.figure()
 
 plt.plot(Ls, sum_errs, 'o', color='C2', ms=5)
@@ -62,7 +59,7 @@ for widx in range(2):
     plt.plot(Ls, errs[widx, :, 0], 'o', color=clrs[widx], ms=5)
 
 plt.ylim(0.0, 1.1*errs[2,Llen-1,0])
-plt.xlim(0,10.5)
+plt.xlim(0, 10.5)
 plt.xticks(fontsize=16)
 plt.yticks(fontsize=16)
 plt.show()
