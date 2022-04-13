@@ -1,6 +1,6 @@
 #
 # Iterative numerical optimization of P, Q, R
-# under Nc = N
+# under Nc = N and L >= 1
 #
 ### For parallel processing
 import os
