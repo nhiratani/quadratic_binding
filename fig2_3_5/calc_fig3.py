@@ -19,9 +19,6 @@ sys.path.append('../lib')
 
 from optimization import optimize_PQR_rand
 
-#import matplotlib.pyplot as plt
-#from pylab import cm
-
 def simul(N, Tpmax, ik):
     P, Q, R, errs = optimize_PQR_rand(N, N, Tpmax)
     
