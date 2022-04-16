@@ -14,7 +14,7 @@ clrs = ['C7', 'C6', 'C4', 'C1']
 
 # K = 0 corresponds to Holographic
 Ns = [8,16,32,64,128,256]
-Ks = [0,1,2,4,8]#[0, 2, 4, 8]
+Ks = [0,1,2,4,8]
 Tmax = 10000
 
 Klen = len(Ks); Nlen = len(Ns)
